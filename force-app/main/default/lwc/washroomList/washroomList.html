@@ -1,0 +1,27 @@
+<!--<template>
+    <h1> why dont u work</h1>
+    <lightning-card title="ApexWireMethodWithParams" icon-name="">
+        <div class="slds-m-around_medium">
+            <h1> hey </h1>
+            <template if:true={washrooms}>
+                <template for:each={washrooms} for:item="washroom">
+                    <p key={washroom.Id}>{washroom.Name}</p>
+                </template>
+            </template>
+        </div>
+    </lightning-card>
+</template>
+-->
+
+<template>
+    <h1> If you don't work something is wrong 3</h1>
+    <lightning-card>
+        <div class="slds-m-around_medium">
+            <template if:true={washrooms.data}>
+                <template for:each={washrooms.data} for:item="washroom">
+                    <p key={washroom.Id}>{washroom.Name}</p>
+                </template>
+            </template>
+        </div>
+    </lightning-card>
+</template>
